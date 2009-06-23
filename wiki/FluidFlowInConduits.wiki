@@ -1,5 +1,7 @@
 #summary Description of the Fluid Flow Model in OpenProc
+#labels Phase-Design
 
+The fluid flow model will be based on the standard methodology for determining the flow resistance of pipes, valves and fitings described in [http://www.flowoffluids.com/tp410.htm  Crane].
 For the purposes of fluid flow modelling the following node and link types will be defined:
 
 
