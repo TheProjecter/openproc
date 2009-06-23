@@ -16,7 +16,7 @@ The bulk of the code will be written in Python for portability, but the solver m
 
 = Processes to Model =
 OpenProc will basically be a network solver for both steady state and transient response.
-The following processes will be supported:
+The basic network construction is described in NetworkDescription.  The following processes will be supported:
   # FluidFlowInConduits - pipes, pumps, vessels, valves etc.
   # ThermalAnalysis     - Thermal conduction in solids, convection and radiation.
 
@@ -31,4 +31,3 @@ A facility will be provided to write python code that will be called before and 
 
 = Database =
 The model will need a significant amount of material properties data values to be useful.  A database of standard properties will be provided as a separate XML file, but it will be possible to define properties within the model itself if required.
-
