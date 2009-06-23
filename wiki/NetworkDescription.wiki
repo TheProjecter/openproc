@@ -1,6 +1,6 @@
 #summary Description of the OpenProc Network Model
 #labels Phase-Implementation
 
-The OpenProc model comprises a series of NodeS and LinkS.
+The OpenProc model comprises a series of NoDes and LiNks.
 
 More Description required....
