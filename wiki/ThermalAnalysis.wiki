@@ -11,3 +11,7 @@ This page will describe the nodes and links that can be defined to produce a the
   # Conduction:  Simple thermal condution link with a thermal conductance defined.
   # Convection:  Thermal convection link with a convection hA defined (heat transfer coefficient x Area).
   # Radiation:   Thermal radiation link with a radiative conductance defined.
+
+
+= Combined Fluid/Thermal Solution =
+How do we do this?  Will need a different link which has both thermal and fluid flow properties?  OR should they all have both properties?  Bit of thinking required for this....
