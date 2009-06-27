@@ -1,0 +1,23 @@
+#summary A description of how the model data is stored in python data structures.
+#labels Phase-Design
+
+= Class Model =
+Contains the following arrays:
+   subModels[] - array of sub models stored in separate files (each of type Model).
+   nodes[] - array of nodes
+   links[] - array of links
+   constants[] - array of constants
+   vectors[] - array of one dimensional vector data
+   2darrays[] - array of two dimensional look-up tables.
+
+= Class Node =
+
+= Class Link =
+
+= Class Constant =
+
+
+= Class Vector =
+
+
+= Class 2dArray =
