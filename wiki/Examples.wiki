@@ -1,0 +1,55 @@
+#summary Sample Model Description XML Files
+#labels Phase-Design
+
+= Simple Thermal Model =
+
+<pre>
+<xml>
+<import file="matdb.xml">
+
+<node type="T">
+   <name>Cold End</name>
+   <num>0</num>
+   <temp fixed="yes">273</temp>
+   <gui_pos x="0", y="0", z="0">
+   <note>Cold end of bar fixed at zero degC</note>
+</node>
+
+<node type="T">
+   <name>Hot End</name>
+   <num>1</num>
+   <temp fixed="yes">373</temp>
+   <gui_pos x="1", y="0", z="0">
+   <note>Hot end of bar fixed at 100 degC</note>
+</node>
+
+<link type="TL">
+  <name>steel bar</name>
+  <num>0</num>
+  <nodes>
+     0
+     1
+  </nodes>
+  <A expr="yes">0.01x0.05</A>
+  <L>0.1</L>
+  <k expr="yes">interp(matdb_k_steel,0.5*(node(0).temp+node(1).temp)</k>
+  <GL expr="yes">k*A/L</GL>
+
+</xml>
+
+</pre>
+
+= Materials Database =
+
+<xml>
+   <vector>
+      <num>0</num>
+      <name>k_steel</name>
+      <values>
+         173  0.20
+         273  0.15
+         373  0.13
+         473  0.10
+      </values>
+   </vector>
+</xml>
