@@ -43,6 +43,7 @@ are provided "expr='yes'" means that the value is calculated as a python express
 }}}
 
 = Materials Database =
+This is an example of a supplementary XML file used to store a database of material properties.  In this case only a single one dimensional (vector) array is defined, which is the thermal conductivity of mild steel.  ***NOTE - do not use this, the numbers are made up because I do not have my data book handy*** 
 {{{
 <xml>
    <vector>
