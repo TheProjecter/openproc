@@ -2,15 +2,18 @@
 #labels Phase-Design
 
 = Simple Thermal Model =
-
-<pre>
+This is a trivial model with two fixed temperature nodes joined by a liner thermal conductor.
+Note that values are assumed to be fixed constants unless one of the following keys
+are provided "expr='yes'" means that the value is calculated as a python expression.
+"calc='yes'" - the value is to be calculated by the solver, and the value provided is just an initial guess.
+{{{
 <xml>
 <import file="matdb.xml">
 
 <node type="T">
    <name>Cold End</name>
    <num>0</num>
-   <temp fixed="yes">273</temp>
+   <temp>273</temp>
    <gui_pos x="0", y="0", z="0">
    <note>Cold end of bar fixed at zero degC</note>
 </node>
@@ -18,7 +21,7 @@
 <node type="T">
    <name>Hot End</name>
    <num>1</num>
-   <temp fixed="yes">373</temp>
+   <temp>373</temp>
    <gui_pos x="1", y="0", z="0">
    <note>Hot end of bar fixed at 100 degC</note>
 </node>
@@ -37,10 +40,10 @@
 
 </xml>
 
-</pre>
+}}}
 
 = Materials Database =
-
+{{{
 <xml>
    <vector>
       <num>0</num>
@@ -53,3 +56,4 @@
       </values>
    </vector>
 </xml>
+}}}
