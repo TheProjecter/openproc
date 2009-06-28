@@ -1,0 +1,17 @@
+OpenProc
+========
+
+This directory contains the source code for OpenProc (http://code.google.com/p/openproc).
+
+It is a general purpose, extensible finite difference model solver.  It will
+solve networks for fluid and thermal analysis.
+
+Note that this is NOT a working system yet, sorry.
+
+Very much a development project.  See the OpenProc wiki for details of the design of the project (http://code.google.com/p/openproc/w/list).
+
+For more information, please contact grahamjones139 at gmail.com
+
+27 June 2009.
+
+
